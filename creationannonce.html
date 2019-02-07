@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>annonce2</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo stuliday.png" height="100" alt=""></a>
+      <a class="navbar-brand" href="index.html">Stuliday</a>
+
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="touteslesannonces.html">Annonces <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="creationannonce.html">Déposer une annonce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="connexion.html">Connexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="monprofil.html">Mon profil</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+  <!---------------------------------------------------------------------------------------------->
+  <section id="presentation">
+    <div class="row">
+      <div class="col-4">
+        <div class="carreGris2"> <img src="img/logo stuliday.png" width=" 70" alt="">
+          <p class="textAnnonce">
+
+            <h6>Chalet à <input type="text" class="form-2-ville" placeholder="Ville"></h6>
+
+            <h6> <input type="text" class="form-2-prix" placeholder="Prix"> /nuit</h6>
+            <h6> <i class="far fa-calendar-alt">du 26/01/2019 au 01/02/2019</i></h6>
+            <div class="row d-flex">
+              <label>Nombre de place disponible:</label>
+              <select name="" id="adultesNumber1" class="form-2 w-50 p-0 mx-lg-auto">
+                <option value="0">0</option>
+                <option value="0">1</option>
+                <option value="0">2</option>
+                <option value="0">3</option>
+                <option value="0">4 et +</option>
+
+              </select>
+            </div>
+
+            <h6> <input type="text" class="form-2-recherche" placeholder=" text recherche"> </h6>
+
+
+          </p>
+
+          <h6>Participants :</h6>
+          <a href="#" class="badge"><i class="fas fa-plus-circle fa-3x"></i></a>
+          <a href="#" class="badge"><i class="fas fa-plus-circle fa-3x"></i></a>
+          <a href="#" class="badge"><i class="fas fa-plus-circle fa-3x"></i></a>
+          <a href="#" class="badge"><i class="fas fa-plus-circle fa-3x"></i></a>
+          <a href="#" class="badge"><i class="fas fa-plus-circle fa-3x"></i></a>
+          <a href="#" class="badge"><i class="fas fa-plus-circle fa-3x"></i></a>
+          <a href="#" class="badge"><i class="fas fa-plus-circle fa-3x"></i></a>
+
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="presentation"> <img src="http://via.placeholder.com/200" height="680" width="1110" alt=""></div>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Mettre une photo d'affiche exterieur du lieu</label>
+            <input type="file" class="form-2-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="blabla2">
+    <div class="container">
+      <h5> Description de l'appartement en détail, du lieu, rappel du nombre de jours. Détail du prix avec les options
+        prises.</h5>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-2" id="exampleFormControlTextarea1" rows="3" placeholder="Ecrire une description"></textarea>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="icon">
+    <div class="container">
+
+      <i class="fas fa-user fa-3x">
+        <h4>6 voyageurs</h4>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            1
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item">2</a>
+            <a class="dropdown-item">3</a>
+            <a class="dropdown-item">4</a>
+            <a class="dropdown-item">5</a>
+            <a class="dropdown-item">6</a>
+            <a class="dropdown-item">plus</a>
+          </div>
+        </div>
+      </i>
+      <i class="fas fa-bed fa-3x">
+        <h4>3 double-lits</h4>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            1
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+            <a class="dropdown-item" href="#">5</a>
+            <a class="dropdown-item" href="#">6</a>
+            <a class="dropdown-item" href="#">plus</a>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              lits simple
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">double lits</a>
+              <a class="dropdown-item" href="#">superposés</a>
+
+            </div>
+          </div>
+        </div>
+      </i>
+      <i class="fas fa-toilet fa-3x">
+        <h4>1 toilette</h4>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            1
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">plus</a>
+          </div>
+        </div>
+      </i>
+      <i class="fas fa-shower fa-3x">
+        <h4>1 salle de bain</h4>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            1
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">plus</a>
+          </div>
+        </div>
+      </i>
+      <i class="fas fa-couch fa-3x">
+        <h4>1 salon</h4>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            0
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">plus</a>
+          </div>
+        </div>
+      </i>
+      <i class="fas fa-utensils fa-3x">
+        <h4>1 cuisine</h4>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            0
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">plus</a>
+          </div>
+        </div>
+      </i>
+
+    </div>
+
+  </section>
+  <section class="deficon">
+
+  </section>
+  <section class="visite">
+    <div class="container">
+
+      <h2>Visitez cet appartement</h2>
+
+      <div class="visites">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Ajouter une photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+      <div class="visites">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Ajouter une photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+      <div class="visites">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Ajouter une photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+      <div class="visites">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Ajouter une photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+      <div class="visites">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Ajouter une photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+      <div class="visites">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Ajouter une photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="options">
+    <h5>Equipements</h5>
+    <div class="equipements">
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Chauffage
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Télévision
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Parking
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Internet
+          </label>
+        </div>
+      </li>
+
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+
+    </div>
+
+    <div class="dispositifs">
+      <h5>Dispositifs de sécurité</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Éclairage extérieur
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Extincteur
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Détecteur de fumée
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Trousse de premiers secours
+          </label>
+        </div>
+      </li>
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </div>
+
+    <div class="destination">
+      <h5>Type de destination</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Montagne
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Lac
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Fleuve/rivière
+          </label>
+        </div>
+      </li>
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </div>
+
+    <div class="repas">
+      <h5>Repas</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Repas non proposés
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Repas proposés
+          </label>
+        </div>
+      </li>
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </div>
+
+    <div class="autres">
+      <h4>Autres</h4>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Chauffage <small> Chauffage individuel, convecteurs</small>
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Linge de maison fourni<small> Les lits sont faits à l'arrivée</small>
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Lave-linge
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Parking
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Accès internet
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Serviettes de bain fournies
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Accès Wi-Fi
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Planche et fer à repasser
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Guide d'activités
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Sèche-cheveux
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Produit lessive
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Parking privatif<small> 3 places de parking</small>
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Casier à skis
+        </label>
+      </div>
+    </li>
+    <li class="liste">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label2" for="defaultCheck1">
+          Salon<small> Petit coin salon, canapé TV</small>
+        </label>
+      </div>
+    <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </li>
+    </div>
+
+
+    <div class="cuisine">
+      <h5>Cuisine</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Lave-vaisselle
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Réfrigérateur
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Congélateur
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Plaques de cuisson
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Four
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Four à micro-ondes
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Gril
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Ustensiles de cuisine
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Cafetière
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Grille-pain
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Mixeur
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Vaisselle et Couverts
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Bouilloire
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Appareil à Raclette
+          </label>
+        </div>
+      </li>
+
+    </div>
+
+    <div class="salle">
+      <h5>Salle à manger</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Table pour manger
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            6 places assises
+          </label>
+        </div>
+      </li>
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </div>
+
+    <div class="loisirs">
+      <h5>Equipements de loisirs</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Télévision
+          </label>
+        </div>
+      </li>
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </div>
+
+    <div class="jardin">
+      <h5>Jardin</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            espace pelouse devant la terrasse
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Barbecue extérieur
+          </label>
+        </div>
+      </li>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            Terrasse
+          </label>
+        </div>
+      </li>
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </div>
+
+    <div class="divers">
+      <h5>Divers</h5>
+      <li class="liste">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label2" for="defaultCheck1">
+            déconseillé aux personnes à mobilité réduit
+          </label>
+        </div>
+      </li>
+      <li class="liste"><a href="#" class="badge"><i class="fas fa-plus-circle fa-2x"></i></a></li>
+    </div>
+  </section>
+
+  <section>
+    <h5>Emplacement</h5>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.899398331989!2d-0.5992728974141086!3d44.84398207741071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40544ecdd848a185%3A0xe6b26bb3783851a9!2sTalis+Business+School!5e0!3m2!1sfr!2sfr!4v1547730943789"
+      width="1980" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
+
+  <a class="btn btn-bleu-valide" href="#" role="button">Valider l'annonce</a>
+
+  <!----------------------------------------------FOOTER--------------------------------------------------->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 pad">
+          <h1>Stuliday</h1>
+          <p>L'utilisation de ce site entraîne votre acceptation des Conditions Générales d’Utilisation et de la
+            Politique des Données Personnelles et des Cookies. Consultez cette page pour comprendre comment fonctionne
+            notre site.
+            ©2019 Stulidayy. All rights reserved.</p>
+          <a href="https://fr-fr.facebook.com/" class="badge"> <i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.instagram.com/" class="badge"> <i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://twitter.com/" class="badge"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+
+        <div class="col-md-4 info">
+          <div class="row">
+            <div class="col-md-6 more-info">
+              <h3>More info</h3>
+              <div>
+                <p><span id="gras">Phone</span>: 010-020-0340</p>
+                <p><span id="gras">Email</span>: sd@partagelocation.com</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"></script>
+
+</html>

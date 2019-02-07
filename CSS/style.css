@@ -1,0 +1,715 @@
+.navbar{
+    border-bottom: solid 1px rgb(218, 218, 218);
+    position: fixed;
+}
+
+.vignettes{
+    display: inline-block;
+}
+
+#section-1{
+    background-image:url("../img/photo1.jpg");
+    padding: 300px 0px;
+    background-size: cover;
+    background-position: bottom;
+}
+#section-2{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(247, 247, 247);
+}
+#section-3{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(247, 247, 247);
+}
+#section-txt{
+    padding: 30px;
+    background-color: rgb(247, 247, 247);
+    
+}
+h3{
+    font-size: 8px;
+}
+
+#section-1 .form-control {
+   
+   display: inline-block;
+    margin: 7px;
+}
+
+#section-1 .btn{
+    background-color: #4F9AE1;
+    border-radius: 25px;
+    margin: 7px;
+  
+}
+#section-txt .btn4{
+    background-color: #4F9AE1;
+    border-radius: 25px;
+    margin: 7px;
+    padding: 10px;
+}
+.container{
+    padding-left: 95px !important;
+}
+/***************************************************/
+.hero{
+    background-repeat: no-repeat;
+}
+.hero.background{
+    background-color: #F7F7F7;
+    background-image:url("../img/montagne.jpg");
+    background-size: 90%;
+    background-position: 50% 80px;
+    display: flex;
+}
+.hero-content{
+    margin-left: 10%;
+    margin-top: 40px;
+    position: relative;
+    top: 20px;
+    padding-bottom: 40px;
+    background-color: white;
+    max-width: 480px;
+    padding: 20px;
+}
+
+.hero-content2{
+    padding-left: 5%;
+    padding-right: 15%;
+    order: 2;
+    position: relative;
+}
+.hero-content2-text{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 35%;
+    left: 100%;
+    width: 100%;
+}
+.btn.btn7{
+    width: 100%;
+    background-color: #4F9AE1;
+    border: solid 0px;
+    margin: -20px;
+    padding: 7px;
+    color: black;
+}
+.phototete{
+    display: flex;
+    padding-bottom: 30px;
+
+}
+
+
+
+
+
+/**********************slider*************************************/
+.carousel{
+	
+	height: 500px;
+	overflow: hidden;
+    background-color: rgb(247, 247, 247);
+   
+}
+
+.txt1{
+    padding: 5px;
+    
+}
+.letext{
+    padding-top: 20px;
+}
+
+
+.zoomarticle {
+	height: auto;
+	float: left;
+	margin-bottom: 1.65em;
+	margin-left: 3%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style: none;
+}
+ 
+.article_big_img {
+	width: 365px;
+	overflow: hidden;
+	padding: 2px;
+}
+ 
+.article_big_img img {
+	width: 365px;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+ 
+.zoomarticle:hover > .article_big_img img {
+	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+
+
+/*******************************************************/
+.zoomarticle:hover > .article_big_img1 > img {
+	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+
+.article_big_img1 >  img {
+	width: 150px;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+/******************************************************/
+.section-4{
+	text-align: center;
+	color: white;
+	
+	padding: 95px 150px 250px 150px;
+}
+
+.lol{
+    display: inline-block;
+}
+
+.img{
+    width: 400px 200px;
+    border-radius: 5px;
+    
+}
+
+
+.titre{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 10px;
+    border-radius: 15px;
+    
+
+}
+
+h2{
+    padding: 20px;
+}
+
+
+.slider1 .txt1{
+    display: inline-block;
+
+}
+.slider1{
+    padding: 35px 17%;
+    
+
+}
+span.carousel-control-next-icon.icon-black{
+    background-image: url(../img/arrows-right.png);
+    background-size: 70% 100%;
+}
+span.carousel-control-prev-icon.icon-black{
+    background-image: url(../img/arrows-left.png);
+    background-size: 70% 100%;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 230px;
+   
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-size: 10px;
+    
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(255, 255, 255, 0.418);
+    color: #5E9ADD;
+    border: 1px solid #f0efef;
+    transform: rotateY(180deg);
+  }
+
+/**********************************************Page connexion*****************************************************************************/
+
+
+#section-6{
+    background-image: url("../img/fondconnexion.jpg");
+    background-size:cover;
+    height:100vh;
+
+}
+
+.container-fluid{
+    padding-top: 10%;
+     width: 100%;
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-right: auto;
+     margin-left: auto;
+ }
+.text-center {
+    text-align: center!important;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 15px;
+    padding:20px;
+}
+
+.form-group {
+ 
+    width: 450px;
+
+}
+
+#exampleInputEmail1 {
+    margin: 0px !important;
+}
+
+.form-check-label {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 150px !important;
+    height:0px !important;
+}
+.btn-color{
+    background-color: #4F9AE1;
+    border-radius: 15px;
+   
+}
+
+/*********************************TouteslesAnnonces****************************************************/
+
+
+.card{
+    padding: 10px;
+    display: inline-block !important;
+
+}
+.card-text{
+    border-bottom: 1px solid black;
+}
+
+.menuAnnonce .col-3{
+    border-right: 1px solid black;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
+
+/************************************************Page annonce *******************************************************************************/
+
+.visites{
+    display: inline-block;
+    padding : 15px;
+}
+
+.presentation , .carreGris{
+    display: inline-block;
+    margin: 0px;
+}
+
+.carreGris{
+    background-color: #F2F2F2;
+    padding: 25px;
+    padding-right: 20px;
+    margin-left:102px;
+    padding-bottom: 18px; /**Longueur du carre gris***/
+}
+.carreGris h5{
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-top: 80px;
+    color: #4F9AE1;
+}
+.textAnnonce{
+    font-weight: bold;
+    font-size: 36px;
+
+}
+
+#presentation{
+    margin-top: 15px;
+}
+.visite, .blabla2{
+    padding-top: 35px;
+    margin: 5px;
+    text-align: center;
+}
+
+.equipements{
+    padding-top: 35px;
+    margin: 5px;
+}
+.icon.container{
+    margin-top: 50px;
+    padding-left: 130px;
+}
+.deficon{
+    margin-right: 100px;
+}
+
+.icon{
+    text-align: center;
+}
+.fas.fa-user.fa-3x {
+    margin: 10px;
+}
+.fas.fa-bed.fa-3x{
+    margin: 30px;
+}
+.fas.fa-toilet.fa-3x{
+    margin: 50px;
+}
+.fas.fa-couch.fa-3x{
+    margin: 50px;
+}
+.fas.fa-utensils.fa-3x{
+    margin: 50px;
+}
+
+.equipements, .dispositifs, .destination, .repas, .autres, .cuisine, .salle, .loisirs, .jardin, .divers{
+    border-top: 1px solid rgb(167, 167, 167);
+  
+}
+
+.liste{
+    list-style: none;
+    padding-bottom: 20px;
+    padding-left: 50px; 
+    display: inline-block;
+}
+.btn.btn-link {
+    margin-bottom: 10px !important;
+}
+
+.card-header {
+    padding: 0px !important;
+    margin-bottom: 0;
+    background-color: none !important;
+    border-bottom: none !important;
+    background-color:#4F9AE1 !important;
+}
+.btn-link{
+    color: white !important;
+}
+.btn-secondary{
+    margin-bottom: 0px !important;
+    background-color: #4F9AE1 !important;
+}
+.btn.btn-bleu{
+    background-color: #4F9AE1;
+    color: white;
+}
+/*********************************************Creation annonce************************************/
+
+.form-2 {
+    width: 250% !important;
+    padding: 40px !important;
+
+}
+.form-2-recherche{
+    padding: 40px;
+    margin: 40px;
+    margin-right: 200px;
+}
+.presentation , .carreGris2{
+    display: inline-block;
+    margin: 0px;
+}
+
+.carreGris2{
+    background-color: #F2F2F2;
+    padding: 25px;
+    padding-right:250px;
+    margin-left:102px;
+    padding-bottom: 175px; /**Longueur du carre gris***/
+}
+.carreGris2 h5{
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-top: 80px;
+    color: #4F9AE1;
+}
+
+.btn.btn-bleu-valide{
+    background-color: #4F9AE1;
+    color: white;
+    margin-left: 850px;
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.equipements{
+    background-color: #F2F2F2;
+}
+.destination{
+    background-color:  #F2F2F2;
+}
+.autres{
+    background-color:  #F2F2F2;
+}
+.salle{
+    background-color:  #F2F2F2;
+}
+.jardin{
+    background-color:  #F2F2F2;
+}
+
+  
+/****************************************Mon profil***************************************************/
+
+
+.profil .col-3{
+    border-right: 1px solid rgb(182, 182, 182);
+}
+
+.photoprofil{
+    padding-left:80px;
+}
+.alert{
+margin-right: 630px;
+
+}
+.btn{
+   
+    margin-bottom: 140px;
+}
+.notetotal{
+    padding: 10px;
+}
+.messagerie{
+    padding: 10px; 
+}
+.fas.fa-comments.fa-2x, .fas.fa-envelope.fa-2x{
+    padding-left: 60px;
+}
+.tout{
+    padding: 10px;
+}
+.col-3.color{
+background-color: #F2F2F2;
+}
+
+.input-group-o.mb-3{
+    display: inline-block;
+}
+/***
+.col-9{
+    background-image: url("../img/fondconnexion.jpg");
+}
+/***********************************Profil Alix**************************************/
+.ProfilAlix{
+    padding: 20px;
+    background-color: #F7F7F7;
+}
+.prof{
+    display:flex;
+}
+ /* -------------------------------------------------------- */
+/*Etoiles*/
+/* -------------------------------------------------------- */
+
+
+.rating a {
+	
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 3em;
+	transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+	color: orange;
+	cursor: pointer;
+ }
+
+
+ .heroe{
+    background-repeat: no-repeat;
+}
+.heroe.background{
+    background-color: #F7F7F7;
+    background-image:url("../img/Montagneprofil.jpeg");
+    background-size: 90%;
+    background-position: 50% 80px;
+    display: flex;
+}
+.heroe-content-2{
+    margin-left: 10%;
+    margin-top: 40px;
+    position: relative;
+    top: 20px;
+    padding-bottom: 40px;
+    background-color: white;
+    
+    padding: 20px;
+}
+
+.heroe-content3{
+    padding-left: 5%;
+    padding-right: 15%;
+    order: 2;
+    position: relative;
+}
+.heroe-content3-text{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 15%;
+    
+    width: 200%;
+}
+.btn.btn7{
+    width: 100%;
+    background-color: #4F9AE1;
+    border: solid 0px;
+    margin: -20px;
+    padding: 7px;
+    color: black;
+}
+.phototete{
+    display: flex;
+    padding-bottom: 30px;
+
+}
+.fas.fa-user-plus.fa-1x{
+color: rgb(242, 242, 242);
+}
+
+/******************************************Formulaire*************************************************************/
+
+.formulaire{
+display: inline-block;
+background-color: rgba(0, 0, 0, 0.336);
+border-radius: 15px;
+padding: 20px;
+}
+
+
+.form-check-label{
+display: inline-block;
+box-sizing: content-box;
+ width: 300px;
+ height: 100px;
+}
+
+
+
+
+.btn.btn3{
+    width: 100%;
+    background-color: #4F9AE1;
+    border: solid 0px;
+    margin: 0px;
+    padding: 7px;
+    color: black;
+}
+.btn.btn4{
+    width: 100%;
+    background-color: #4F9AE1;
+    border: solid 0px;
+    margin: -50px;
+    padding: 7px;
+    color: black;
+}
+
+
+#emailHelp{
+
+box-sizing: content-box;
+color: rgb(192, 192, 192) !important;
+
+ height: 130px;
+}
+#exampleInputEmail1{
+    margin: 10px;
+   
+}
+.formulaire label{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+.form-check-label1{
+    color: rgb(255, 255, 255);
+}
+
+
+.cadre{
+background-image:url("../img/test3.jpeg");
+background-size:100%;
+background-repeat: no-repeat;
+padding: 10%;
+}
+/*******************************************FOOTER**************************************/
+
+#footer{
+    color: rgb(255, 255, 255);
+    background-color:#579ADF;
+    border-top: solid 1px rgb(218, 218, 218);
+}
+.fab.fa-facebook{
+color: #F7F7F7;
+}
+.fab.fa-instagram{
+   color: #F7F7F7;
+}
+
+.fab.fa-twitter{
+   color: #F7F7F7;
+}
+/*************************************************/
+.pagination{
+   justify-content: center;
+}
